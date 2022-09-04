@@ -3,21 +3,16 @@ import org.junit.jupiter.api.Test;
 
 class CandidatoTest {
 
-    @Test
+    @Test // Testa se o candidato foi adicionado
     void testAdicionaNovoCandidato() {
-        Candidato.adicionaNovoCandidato();
-
+        Candidato.adicionaCandidatos(); // Adiciona 5 candidatos
+        Candidato.adicionaNovoCandidato(); // Adiciona 1 novo candidato
+        Assertions.assertEquals(6, Candidato.getCandidatos().size());
     }
 
-    @Test
+    @Test // Testa se a lista de candidatos está vazia
     void testListaCandidatos() {
         Candidato.adicionaCandidatos();
         Assertions.assertFalse(Candidato.getCandidatos().isEmpty());
-    }
-
-    @Test
-    void testQuantidadeCandidatos() {
-        Candidato.adicionaCandidatos();
-        Assertions.assertEquals(5, Candidato.getCandidatos().size());
     }
 }

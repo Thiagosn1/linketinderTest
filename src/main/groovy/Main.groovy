@@ -21,11 +21,15 @@ while (rodar) {
     switch (opcao) {
         case 1:
             Empresa.adicionaEmpresas()
+            println()
             println "Empresas adicionadas"
+            println()
             break
         case 2:
             Candidato.adicionaCandidatos()
+            println()
             println "Candidatos adicionados"
+            println()
             break
         case 3:
             Empresa.listaEmpresas()
@@ -35,11 +39,15 @@ while (rodar) {
             break
         case 5:
             Empresa.adicionaNovaEmpresa()
+            println()
             println "Nova empresa adicionada"
+            println()
             break
         case 6:
             Candidato.adicionaNovoCandidato()
+            println()
             println "Novo candidato adicionado"
+            println()
             break
         case 7:
             rodar = false
